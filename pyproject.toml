@@ -1,18 +1,16 @@
-[tool.poetry]
-name = "my-project"
+[project]
+name = "python3-starter"
 version = "0.1.0"
-description = "A Python project scaffold"
-authors = ["Your Name <your.email@example.com>"]
+description = "Description"
+authors = [
+    {name = "legiorange",email = "legiorange@163.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-requests = "^2.26.0"
-
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-flake8 = "^4.0.1"
-black = "^21.12b0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
